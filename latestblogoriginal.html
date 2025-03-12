@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karmapath - Latest Blogs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex flex-col items-center min-h-screen bg-gradient-to-r from-blue-900 via-teal-600 to-orange-500 text-white">
+    
+    <!-- Navbar -->
+    <nav class="w-full bg-gradient-to-r from-yellow-400 via-red-500 to-blue-500 p-4 shadow-lg flex justify-between items-center">
+        <div class="flex items-center space-x-4">
+            <img src="karmaPathLogo-removebg-preview.png" alt="Karmapath Logo" class="h-10">  
+            <h1 class="text-2xl font-bold text-black">Karmapath</h1>
+        </div>
+        <div class="flex items-center space-x-4">
+            <input type="text" placeholder="Search..." class="px-4 py-2 rounded-md bg-gray-800 text-white border border-gray-600 focus:outline-none focus:border-yellow-400 hidden md:block">
+            <img src="whitesearchbar-removebg-preview.png" alt="Search Icon" class="h-7">
+            <img src="userimage-removebg-preview.png" alt="User Icon" class="h-8">
+            <button class="text-white focus:outline-none" id="sidebarToggle">☰</button>
+        </div>
+    </nav>
+    
+    <!-- Sidebar -->
+    <div id="sidebar" class="fixed top-0 left-0 h-full w-64 bg-gradient-to-b from-blue-900 via-teal-600 to-orange-500 text-white transform -translate-x-full transition-transform z-50 p-6">
+        <ul class="space-y-4">
+            <li> <a href="latestblogoriginal.html"  class="hover:bg-red-500 hover:text-white p-2 rounded-md cursor-pointer transition"> Blog</li>
+                <li> <a href="aibot.html" class="hover:bg-red-500 hover:text-white p-2 rounded-md cursor-pointer transition">Chat with AI</li>
+                <li> <a href="kundalimatchingfinal.html" class="hover:bg-red-500 hover:text-white p-2 rounded-md cursor-pointer transition">Kundali Matching</li>
+                <li> <a href="viewkundali.html" class="hover:bg-red-500 hover:text-white p-2 rounded-md cursor-pointer transition">View Kundali</li>
+                <li> <a href="aboutfinal.html" class="hover:bg-red-500 hover:text-white p-2 rounded-md cursor-pointer transition">About</li>
+                <li> <a href="contact.html"  class="hover:bg-red-500 hover:text-white p-2 rounded-md cursor-pointer transition">Contact</li>
+                <li>  <a href="login.html" class="hover:bg-red-500 hover:text-white p-2 rounded-md cursor-pointer transition">Login/Signup</li>
+            </ul>
+    </div>
+    
+    <h2 class="text-4xl font-bold text-white mt-10">Latest Blogs</h2>
+    <p class="text-gray-200 text-lg mb-6">Explore the latest insights in astrology</p>
+    
+    <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-6">
+        <div class="bg-white bg-opacity-10 p-6 rounded-xl shadow-xl transform hover:scale-110 transition duration-300 border border-gray-400 animate-fadeIn">
+            <img src="Signs-of-the-Zodiac-astrology.webp" class="w-full h-40 object-cover rounded-md">
+            <h3 class="mt-4 text-2xl font-semibold text-yellow-300">Understanding Your Zodiac Sign</h3>
+            <p class="text-gray-200 mt-2">Discover what your zodiac sign reveals about you...</p>
+            <button class="mt-4 px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition transform hover:scale-105 font-semibold">Read More</button>
+        </div>
+        <div class="bg-white bg-opacity-10 p-6 rounded-xl shadow-xl transform hover:scale-110 transition duration-300 border border-gray-400 animate-fadeIn">
+            <img src="aiastrology.jpg" class="w-full h-40 object-cover rounded-md">
+            <h3 class="mt-4 text-2xl font-semibold text-yellow-300">AI and Astrology: The Future</h3>
+            <p class="text-gray-200 mt-2">How AI is changing astrology predictions...</p>
+            <button class="mt-4 px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition transform hover:scale-105 font-semibold">Read More</button>
+        </div>
+        <div class="bg-white bg-opacity-10 p-6 rounded-xl shadow-xl transform hover:scale-110 transition duration-300 border border-gray-400 animate-fadeIn">
+            <img src="tarotguide.jpg" class="w-full h-40 object-cover rounded-md">
+            <h3 class="mt-4 text-2xl font-semibold text-yellow-300">Tarot Reading: A Guide</h3>
+            <p class="text-gray-200 mt-2">Learn how tarot reading works and its impact...</p>
+            <button class="mt-4 px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition transform hover:scale-105 font-semibold">Read More</button>
+        </div>
+        <div class="bg-white bg-opacity-10 p-6 rounded-xl shadow-xl transform hover:scale-110 transition duration-300 border border-gray-400 animate-fadeIn">
+            <img src="aiastrology.jpg" class="w-full h-40 object-cover rounded-md">
+            <h3 class="mt-4 text-2xl font-semibold text-yellow-300">The Cosmic Connection</h3>
+            <p class="text-gray-200 mt-2">How the universe influences our daily lives...</p>
+            <button class="mt-4 px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition transform hover:scale-105 font-semibold">Read More</button>
+        </div>
+        <div class="bg-white bg-opacity-10 p-6 rounded-xl shadow-xl transform hover:scale-110 transition duration-300 border border-gray-400 animate-fadeIn">
+            <img src="aiastrology.jpg" class="w-full h-40 object-cover rounded-md">
+            <h3 class="mt-4 text-2xl font-semibold text-yellow-300">The Cosmic Connection</h3>
+            <p class="text-gray-200 mt-2">How the universe influences our daily lives...</p>
+            <button class="mt-4 px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition transform hover:scale-105 font-semibold">Read More</button>
+        </div>
+        <div class="bg-white bg-opacity-10 p-6 rounded-xl shadow-xl transform hover:scale-110 transition duration-300 border border-gray-400 animate-fadeIn">
+            <img src="aiastrology.jpg" class="w-full h-40 object-cover rounded-md">
+            <h3 class="mt-4 text-2xl font-semibold text-yellow-300">The Cosmic Connection</h3>
+            <p class="text-gray-200 mt-2">How the universe influences our daily lives...</p>
+            <button class="mt-4 px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition transform hover:scale-105 font-semibold">Read More</button>
+        </div>
+    </div>
+    
+    <script>
+        document.getElementById('sidebarToggle').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.toggle('-translate-x-full');
+        });
+    </script>
+</body>
+</html>

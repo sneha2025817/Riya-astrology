@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karmapath - Astrology Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
+
+   
+</head>
+<body class="flex flex-col items-center min-h-screen bg-gradient-to-r from-blue-900 via-teal-600 to-orange-500 text-white">
+      
+    <!-- Navbar -->
+     
+    <nav class="bg-gradient-to-r from-yellow-400 via-red-500 to-blue-500 p-4 shadow-md flex justify-between items-center w-full">
+        <div class="flex items-center gap-2">
+            <img src="karmaPathLogo-removebg-preview.png" alt="Karmapath Logo" class="h-12">
+            <span class="text-black text-2xl font-bold">Karmapath</span>
+        </div>
+   
+        <div class="flex items-center gap-4">
+            <input type="text" placeholder="Search..." class="p-2 rounded-md border border-gray-300 focus:outline-none hidden md:block">
+            <img src="whitesearchbar-removebg-preview.png" alt="search bar" class="h-7">
+            <img src="userimage-removebg-preview.png" alt="search bar" class="h-8">
+            
+            <button class="text-white text-xl menu-toggle">☰</button>
+        </div>
+    </nav>
+
+   
+<!--section-->
+    <div class="fixed top-0 left-0 h-full w-64 bg-gradient-to-b from-blue-700 via-red-600 to-yellow-500 text-white transform -translate-x-full transition-transform duration-300 ease-in-out sidebar z-50 shadow-2xl">
+        <div class="p-6 text-lg font-semibold border-b border-yellow-300 bg-gray-900 text-yellow-400">Menu</div>
+        <ul class="p-4 space-y-4">
+            <li class="hover:bg-red-500 hover:text-white p-2 rounded-md cursor-pointer transition">Blog</li>
+            <li class="hover:bg-red-500 hover:text-white p-2 rounded-md cursor-pointer transition">Chat with AI</li>
+            <li class="hover:bg-red-500 hover:text-white p-2 rounded-md cursor-pointer transition">Kundali Matching</li>
+            <li class="hover:bg-red-500 hover:text-white p-2 rounded-md cursor-pointer transition">View Kundali</li>
+            <li class="hover:bg-red-500 hover:text-white p-2 rounded-md cursor-pointer transition">About</li>
+            <li class="hover:bg-red-500 hover:text-white p-2 rounded-md cursor-pointer transition">Contact</li>
+            <li class="hover:bg-red-500 hover:text-white p-2 rounded-md cursor-pointer transition">Login/Signup</li>
+        </ul>
+    </div>
+
+     
+
+    
+
+    <script>
+        document.querySelector(".menu-toggle").addEventListener("click", function() {
+            document.querySelector(".sidebar").classList.toggle("-translate-x-full");
+        });
+
+       
+
+        
+    </script>
+</body>
+</html>
+ 
+    
+    

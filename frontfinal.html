@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karmapath - Astrology Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
+
+   
+</head>
+<body class="bg-gray-100 font-sans">
+    
+    <!-- Navbar -->
+    <nav class="bg-gradient-to-r from-yellow-400 via-red-500 to-blue-500 p-4 shadow-md flex justify-between items-center">
+        <div class="flex items-center gap-2">
+            <img src="karmaPathLogo-removebg-preview.png" alt="Karmapath Logo" class="h-12">
+            <span class="text-black text-2xl font-bold">Karmapath</span>
+        </div>
+   
+        <div class="flex items-center gap-4">
+            <input type="text" placeholder="Search..." class="p-2 rounded-md border border-gray-300 focus:outline-none hidden md:block">
+            <img src="whitesearchbar-removebg-preview.png" alt="search bar" class="h-7">
+            <img src="userimage-removebg-preview.png" alt="search bar" class="h-8">
+            
+            <button class="text-white text-xl menu-toggle">☰</button>
+        </div>
+    </nav>
+
+   
+<!--section-->
+    <div class="fixed top-0 left-0 h-full w-64 bg-gradient-to-b from-blue-700 via-red-600 to-yellow-500 text-white transform -translate-x-full transition-transform duration-300 ease-in-out sidebar z-50 shadow-2xl">
+        <div class="p-6 text-lg font-semibold border-b border-yellow-300 bg-gray-900 text-yellow-400">Menu</div>
+        <ul class="p-4 space-y-4">
+            <li> <a href="latestblogoriginal.html"  class="hover:bg-red-500 hover:text-white p-2 rounded-md cursor-pointer transition"> Blog</li>
+            <li> <a href="aibot.html" class="hover:bg-red-500 hover:text-white p-2 rounded-md cursor-pointer transition">Chat with AI</li>
+            <li> <a href="kundalimatchingfinal.html" class="hover:bg-red-500 hover:text-white p-2 rounded-md cursor-pointer transition">Kundali Matching</li>
+            <li> <a href="viewkundali.html" class="hover:bg-red-500 hover:text-white p-2 rounded-md cursor-pointer transition">View Kundali</li>
+            <li> <a href="aboutfinal.html" class="hover:bg-red-500 hover:text-white p-2 rounded-md cursor-pointer transition">About</li>
+            <li> <a href="contact.html"  class="hover:bg-red-500 hover:text-white p-2 rounded-md cursor-pointer transition">Contact</li>
+            <li>  <a href="login.html" class="hover:bg-red-500 hover:text-white p-2 rounded-md cursor-pointer transition">Login/Signup</li>
+        </ul>
+    </div>
+
+    <!-- Hero Section with Carousel -->
+   
+
+    <section class="relative w-full">
+        <div id="carouselExample" class="relative w-full" data-carousel="slide">
+            <div class="relative h-64 overflow-hidden rounded-lg md:h-96">
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="https://i.ytimg.com/vi/g3vzuHLh9eY/maxresdefault.jpg" class="absolute block w-full h-full object-cover" alt="Astrology">
+                </div>
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="https://cdn.pixabay.com/video/2024/02/04/199293-909903179_tiny.jpg" class="absolute block w-full h-full object-cover" alt="Zodiac">
+                </div>
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="https://cdn.pixabay.com/video/2024/02/20/201293-915375233_tiny.jpg" class="absolute block w-full h-full object-cover" alt="Horoscope">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <!-- Destiny Section -->
+    <section class="py-10 bg-white text-center">
+        <h1 class="text-4xl font-bold text-gray-800">Learn More About Your Destiny</h1>
+        <button class="mt-4 px-6 py-3 bg-yellow-500 text-white font-semibold text-lg rounded-lg shadow-md hover:bg-yellow-600 transition">Chat Now</button>
+    </section>
+
+   <!-- Latest Blogs Section -->
+   <section class="py-10 px-4 bg-gradient-to-r from-yellow-400 via-red-500 to-blue-500">
+    <h2 class="text-3xl font-bold text-center text-white">Latest Blogs</h2>
+    <div class="mt-6 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white bg-opacity-50 p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300">
+            <img src="Signs-of-the-Zodiac-astrology.webp" class="w-full h-40 object-cover rounded-md">
+            <h3 class="mt-4 text-xl font-semibold">Understanding Your Zodiac Sign</h3>
+            <p class="text-gray-600 mt-2">Discover what your zodiac sign reveals about you...</p>
+            <button class="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600">Read More</button>
+        </div>
+        <div class="bg-white bg-opacity-50 p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300">
+            <img src="aiastrology.jpg" class="w-full h-40 object-cover rounded-md">
+            <h3 class="mt-4 text-xl font-semibold">AI and Astrology: The Future</h3>
+            <p class="text-gray-600 mt-2">How AI is changing astrology predictions...</p>
+            <button class="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600">Read More</button>
+        </div>
+        <div class="bg-white bg-opacity-50 p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300">
+            <img src="tarotguide.jpg" class="w-full h-40 object-cover rounded-md">
+            <h3 class="mt-4 text-xl font-semibold">Tarot Reading: A Guide</h3>
+            <p class="text-gray-600 mt-2">Learn how tarot reading works and its impact...</p>
+            <button class="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600">Read More</button>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Customer Reviews Section -->
+    <section class="py-10 px-4">
+        <h2 class="text-3xl font-bold text-center text-gray-800">Customer Reviews</h2>
+        <div class="mt-6 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300 border-l-4 border-yellow-400">
+                <p class="text-gray-600 italic">"Karmapath's astrology insights changed my life! Highly recommended!"</p>
+                <div class="mt-4 flex items-center">
+                    <span class="text-yellow-500 text-lg">★★★★★</span>
+                    <span class="ml-2 text-gray-700 font-semibold">- Aditi Sharma</span>
+                </div>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300 border-l-4 border-red-500">
+                <p class="text-gray-600 italic">"The AI predictions were surprisingly accurate and insightful!"</p>
+                <div class="mt-4 flex items-center">
+                    <span class="text-yellow-500 text-lg">★★★★★</span>
+                    <span class="ml-2 text-gray-700 font-semibold">- Rahul Verma</span>
+                </div>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300 border-l-4 border-blue-500">
+                <p class="text-gray-600 italic">"Beautifully designed platform with deep astrology insights."</p>
+                <div class="mt-4 flex items-center">
+                    <span class="text-yellow-500 text-lg">★★★★☆</span>
+                    <span class="ml-2 text-gray-700 font-semibold">- Priya Malhotra</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+        <!-- Footer Section -->
+        <footer class="bg-gray-900 text-white py-10 mt-10">
+            <div class="container mx-auto text-center">
+                <h3 class="text-lg font-semibold mb-3">Follow Us</h3>
+                <div class="flex justify-center space-x-6">
+                    <a href="#" class="text-blue-500 hover:text-blue-700">
+                        <img src="facebook.png" alt="Facebook" class="h-6 inline">
+                    </a>
+                    <a href="#" class="text-pink-500 hover:text-pink-700">
+                        <img src="Instagram_icon.png" alt="Instagram" class="h-6 inline">
+                    </a>
+                    <a href="#" class="text-blue-400 hover:text-blue-600">
+                        <img src="twitter.png" alt="Twitter" class="h-6 inline">
+                    </a>
+                    <a href="#" class="text-red-600 hover:text-red-800">
+                        <img src="youtube.jpg" alt="YouTube" class="h-6 inline">
+                    </a>
+                </div>
+            </div>
+            <div class="text-center mt-6 border-t border-gray-700 pt-4">
+                <p>&copy; 2025 Karmapath. All Rights Reserved.</p>
+            </div>
+        </footer>
+    
+
+    <script>
+        document.querySelector(".menu-toggle").addEventListener("click", function() {
+            document.querySelector(".sidebar").classList.toggle("-translate-x-full");
+        });
+
+        let index = 0;
+        function showNextImage() {
+            const carousel = document.getElementById("carousel");
+            index = (index + 1) % 3;
+            carousel.style.transform = `translateX(-${index * 100}%)`;
+        }
+        setInterval(showNextImage, 300); // Change image every 0.3s
+    
+    </script>
+</body>
+</html>

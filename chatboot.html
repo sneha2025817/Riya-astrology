@@ -1,0 +1,40 @@
+require("dotenv").config();
+const express = require("express");
+const cors = require("cors");
+const axios = require("axios");
+const OpenAI = require("openai");
+
+const app = express();
+app.use(express.json());
+app.use(cors());
+
+const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+
+app.post("/chat", async (req, res) => {
+  const { message, zodiacSign } = req.body;
+
+  try {
+    // Astrology API se data fetch karna
+    const astroResponse = await axios.get(
+      `https://aztro.sameerkumar.website/?sign=${zodiacSign}&day=today`
+    );
+
+    const horoscope = astroResponse.data.description;
+
+    // OpenAI se AI-based response generate karna
+    const aiResponse = await openai.chat.completions.create({
+      model: "gpt-3.5-turbo",
+      messages: [
+        { role: "system", content: "You are an astrology expert AI chatbot." },
+        { role: "user", content: `Give me a horoscope for ${zodiacSign}: ${horoscope}` },
+      ],
+    });
+
+    res.json({ reply: aiResponse.choices[0].message.content });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: "Something went wrong!" });
+  }
+});
+
+app.listen(5000, () => console.log("Server running on port 5000"));

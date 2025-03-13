@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astrology AI Chatbot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ffcc00, #ff3300, #0033cc);
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .chat-container {
+            width: 350px;
+            margin: 50px auto;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(255, 215, 0, 0.5);
+            overflow: hidden;
+        }
+        .chat-box {
+            height: 300px;
+            overflow-y: auto;
+            padding: 10px;
+            border-bottom: 1px solid #ffd700;
+        }
+        .input-container {
+            display: flex;
+            padding: 10px;
+            background: #222;
+        }
+        input {
+            flex: 1;
+            padding: 8px;
+            border: 1px solid #ffd700;
+            border-radius: 5px;
+            outline: none;
+            background: black;
+            color: white;
+        }
+        button {
+            padding: 8px 12px;
+            margin-left: 5px;
+            border: none;
+            background: #ffd700;
+            color: black;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .message {
+            padding: 8px;
+            border-radius: 5px;
+            margin: 5px;
+            max-width: 70%;
+        }
+        .user {
+            background: #ff6600;
+            color: white;
+            align-self: flex-end;
+        }
+        .bot {
+            background: #444;
+            color: #ffd700;
+            align-self: flex-start;
+        }
+    </style>
+</head>
+<body>
+    <h1>🔮 Astrology AI Chatbot 🔮</h1>
+    <div class="chat-container">
+        <div class="chat-box" id="chatBox"></div>
+        <div class="input-container">
+            <input type="text" id="userInput" placeholder="Ask about your destiny...">
+            <button onclick="sendMessage()">🔮 Ask</button>
+        </div>
+    </div>
+
+    <script>
+        function sendMessage() {
+            let userInput = document.getElementById("userInput").value;
+            if (userInput.trim() === "") return;
+
+            appendMessage(userInput, 'user');
+            document.getElementById("userInput").value = "";
+
+            setTimeout(() => {
+                let botResponse = getBotResponse(userInput);
+                appendMessage(botResponse, 'bot');
+            }, 1000);
+        }
+
+        function appendMessage(text, sender) {
+            let chatBox = document.getElementById("chatBox");
+            let messageDiv = document.createElement("div");
+            messageDiv.classList.add("message", sender);
+            messageDiv.innerText = text;
+            chatBox.appendChild(messageDiv);
+            chatBox.scrollTop = chatBox.scrollHeight;
+        }
+
+        function getBotResponse(input) {
+            let responses = {
+                "mera bhavishya batao": "Aapka bhavishya chamakdar hai! Aap hard work aur patience se safalta paayenge!",
+                "mera rashifal kya hai": "Aapki rashi ke anusar, aaj aapke liye ek naya avsar aane wala hai!",
+                "kundali dekhna hai": "Kundali milan ke liye hamare AI se sampark karein!",
+                "grahon ka prabhav batao": "Grahon ka prabhav aapke jeevan mein ek mahatvapurn bhoomika nibhata hai. Kya aap kisi vishesh grah ki jankari chahte hain?",
+                "bye": "Bhavishya roshni se bhara ho! Fir milenge!"
+            };
+            return responses[input.toLowerCase()] || "Is vishay par mujhe adhik jankari nahi hai. Kripya aur kuch poochhein!";
+        }
+    </script>
+</body>
+</html>
